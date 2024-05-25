@@ -3,16 +3,11 @@ import {AiOutlineMenu,AiOutlineClose} from 'react-icons/ai'
 
 const NavBar = () => {
 
-
         const[nav,setNav] =useState(false);
 
         const handleNavigation=()=>{
-           
            setNav(!nav)
-
         }
-
-
 
   return (
    <>
@@ -40,10 +35,7 @@ const NavBar = () => {
                     {!nav ? <AiOutlineMenu className='w-5'/> : <AiOutlineClose className='w-5'/> }
                 </div>
 
-
-
            </div>
-
 
            <div>
 
@@ -57,9 +49,7 @@ const NavBar = () => {
                       <li className='border-b-2 border-zinc-300'><a href="">Platforms</a></li>
                      <li className='border-b-2 border-zinc-300'><a href="">Pricing</a></li>
                  </ul>
-
-            
-          
+     
                <div className='flex flex-col my-2'>
 
 
