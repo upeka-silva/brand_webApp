@@ -1,7 +1,19 @@
-import React from 'react'
-import {AiOutlineMenu} from 'react-icons/ai'
+import React, { useState } from 'react'
+import {AiOutlineMenu,AiOutlineClose} from 'react-icons/ai'
 
 const NavBar = () => {
+
+
+        const[nav,setNav] =useState(false);
+
+        const handleNavigation=()=>{
+           
+           setNav(!nav)
+
+        }
+
+
+
   return (
    <>
     <div className='w-screen h-[80px] bg-zinc-200  z-10 drop-shadow-lg'>
@@ -24,10 +36,41 @@ const NavBar = () => {
                               <button>Sign Up</button>
                 </div>
 
-                <div className='md:hidden'>
-
-                    <AiOutlineMenu className='mr-4'  size={20}/>
+                <div className='md:hidden' onClick={handleNavigation}>
+                    {!nav ? <AiOutlineMenu className='w-5'/> : <AiOutlineClose className='w-5'/> }
                 </div>
+
+
+
+           </div>
+
+
+           <div>
+
+
+            
+           <div className= {nav==true ? ' md:hidden absolute w-screen text-center  bg-zinc-200 ' : 'hidden'}  >
+                  <ul >
+                     <li className='border-b-2 border-zinc-300'><a href="">Home</a></li>
+                      <li className='border-b-2 border-zinc-300'><a href="">About</a></li>
+                      <li className='border-b-2 border-zinc-300'><a href="">Support</a></li>
+                      <li className='border-b-2 border-zinc-300'><a href="">Platforms</a></li>
+                     <li className='border-b-2 border-zinc-300'><a href="">Pricing</a></li>
+                 </ul>
+
+            
+          
+               <div className='flex flex-col my-2'>
+
+
+                <button className='bg-transparent mx-2' >Sign Up</button>
+                <button className='mx-2 my-2'>Sign In</button>
+    
+               </div>
+                  
+
+           </div>
+
 
            </div>
 
