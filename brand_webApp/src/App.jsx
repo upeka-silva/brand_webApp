@@ -4,6 +4,7 @@ import Hero from './component/Hero'
 import NavBar from './component/NavBar'
 import About from './component/About'
 import Support from './component/Support'
+import AllInOne from './component/AllInOne'
 
 function App() {
  
@@ -14,6 +15,7 @@ function App() {
     <Hero/>
     <About/>
     <Support/>
+    <AllInOne/>
     </>
   )
 }

@@ -11,16 +11,14 @@ const Support = () => {
   return (
 
     <>
-    
-    
+
        <div className='w-full h-screen mt-24'>
 
             <div className='w-full h-[400px] bg-gray-700 absolute'>
                 <img className=' w-full h-full object-cover mix-blend-overlay' src={suportImg} alt="" />
             </div>
 
-        <div className='max-w-[1240px] mx-auto text-center
-text-center  text-white relative '>
+        <div className='max-w-[1240px] mx-auto text-center text-center  text-white relative '>
            <div className='px-4 py-12 '>
             <h2 className='pt-8 text-slate-300 uppercase '>Support</h2>
             <h3 className='text-5xl font-bold py-6 '>Finding the right team </h3>

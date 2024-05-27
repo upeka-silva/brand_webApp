@@ -31,8 +31,8 @@ const NavBar = () => {
                               <button>Sign Up</button>
                 </div>
 
-                <div className='md:hidden' onClick={handleNavigation}>
-                    {!nav ? <AiOutlineMenu className='w-5'/> : <AiOutlineClose className='w-5'/> }
+                <div className='md:hidden mr-4 ' onClick={handleNavigation}>
+                    {!nav ? <AiOutlineMenu className='  w-5'/> : <AiOutlineClose className='  w-5'/> }
                 </div>
 
            </div>
