@@ -5,6 +5,7 @@ import NavBar from './component/NavBar'
 import About from './component/About'
 import Support from './component/Support'
 import AllInOne from './component/AllInOne'
+import Pricing from './component/Pricing'
 
 function App() {
  
@@ -16,6 +17,7 @@ function App() {
     <About/>
     <Support/>
     <AllInOne/>
+    <Pricing/>
     </>
   )
 }
